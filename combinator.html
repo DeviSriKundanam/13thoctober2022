@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.sec1>p{
+			background-color: yellowgreen;
+		}
+		/*if background colour needed for grand child also then*/ 
+		.sec1 div{
+			background-color: pink;
+		}
+		/*+ is the adjacent selector and ~ is the general selector ,it applies to all adjacent tags*/
+		.sec1+h2{
+			background-color: greenyellow;
+		}
+	</style>
+</head>
+<body>
+	<section class="sec1">
+		<p>this is para child one</p>
+		<p>this is para child two</p>
+		<div>
+			<p>this is para grand child one</p>
+			<p>this is para grand child two</p>
+		</div>
+		<h1>this is head child one </h1>
+		<p>this is para child three</p>
+	</section>
+	<h2>this is heading two and adjacent to sec1</h2>
+	<p>other para</p>
+	<h2>this is heading two and adjacent to sec1</h2>
+</body>
+</html>
